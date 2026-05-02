@@ -1,0 +1,2 @@
+RiftCoach is a Python project that analyses League of Legends match data and gives simple performance feedback.
+This first version uses fake match data so I can practise Python basics before connecting to the Riot API.
