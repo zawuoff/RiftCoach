@@ -8,6 +8,7 @@ print(
     f"Win rate: {stats.winrate(data.matches)}\n"
     f"Average KDA: {stats.avg_kda(data.matches)}\n"
     f"Average CS per min: {stats.avg_cs(data.matches)}\n"
+    f"Average Vision Score: {stats.avg_vision_score(data.matches)}\n"
     f"Best Champion: {stats.find_best_champ(data.matches)}"
 )
 
@@ -15,6 +16,8 @@ if stats.avg_kda(data.matches) < 3:
     print("Overall focus: play safer and reduce deaths")
 elif stats.avg_cs(data.matches) < 6:
     print("Overall focus: improve farming")
+elif stats.avg_vision_score(data.matches) < 25:
+    print("Overall focus: improve warding")
 else:
     print("Overall focus: good overall performance")
 

@@ -32,6 +32,12 @@ def avg_kda(matches_list):
     average_kda = total_kda/ len(matches_list)
     return average_kda
 
+def avg_vision_score(matches_list):
+    total_vision_score = 0
+    for match in matches_list:
+        total_vision_score += match["vision_score"]
+    return round(total_vision_score/len(matches_list),1)
+
 def find_best_champ(matches_list):
     best_champ = ""
     best_kda = 0
