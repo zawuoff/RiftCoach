@@ -11,6 +11,11 @@ def get_cs_per_min(cs):
         return "You are cs-ing pretty well this game"
     else:
         return "Try to last hit well!"
+        
+
+# TO DO ADD VISION SCORE TO DO THE INDIVIDUAL SUMMARY
+#def get_vision_score(vision):
+
 
 def get_result(match):
     if match["win"] == "True":
