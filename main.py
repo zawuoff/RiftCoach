@@ -53,6 +53,4 @@ def main():
     print_individual_summary()
     
 
-    
-
 main()
