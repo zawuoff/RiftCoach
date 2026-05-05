@@ -12,6 +12,12 @@ def get_cs_per_min(cs):
     else:
         return "Try to last hit well!"
 
+def get_result(match):
+    if match["win"] == "True":
+        return "Victory"
+    else: 
+        return "Defeat"
+
 def print_overall_summary():
     print(
         "\n"
@@ -42,6 +48,7 @@ def print_match_review(matches):
         kda = stats.calculate_kda(matches["kills"], matches["deaths"], matches["assists"])
 
         print(
+        f"Result: {get_result(matches)}\n"
         f"Champion: {matches['champion']}\n"
         f"KDA: {kda}\n"
         f"CS/min: {cs_per_minute}\n"
