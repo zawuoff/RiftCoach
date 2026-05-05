@@ -1,6 +1,6 @@
 import data, stats
-def main():
 
+def print_overall_summary():
     print(
         "\n"
         f"RiftCoach Match Review\n"
@@ -13,6 +13,7 @@ def main():
         f"Best Champion: {stats.find_best_champ(data.matches)}"
     )
 
+def print_individual_summary():
     if stats.avg_kda(data.matches) <= 3:
         print("Overall focus: play safer and reduce deaths")
     elif stats.avg_cs(data.matches) <= 6:
@@ -46,5 +47,12 @@ def main():
             print("Try to last hit well!")
         
         print("---------------------------------------")
+
+def main():
+    print_overall_summary()
+    print_individual_summary()
+    
+
+    
 
 main()
