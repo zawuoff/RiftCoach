@@ -1,5 +1,17 @@
 import data, stats
 
+def get_kda(kda):
+    if kda >= 3:
+        return "Good fighting performance."
+    else:
+        return "Try to die less"
+
+def get_cs_per_min(cs):
+    if cs >= 7:
+        return "You are cs-ing pretty well this game"
+    else:
+        return "Try to last hit well!"
+
 def print_overall_summary():
     print(
         "\n"
@@ -35,14 +47,8 @@ def print_match_review(matches):
         f"CS/min: {cs_per_minute}\n"
         "Feedback:"
         )
-        if kda >= 3:
-            print("Good fighting performance.")
-        else: 
-            print("Try to die less")
-        if cs_per_minute >= 7:
-            print("You are cs-ing pretty well this game")
-        else:
-            print("Try to last hit well!")
+        print(get_kda(kda))
+        print(get_cs_per_min(cs_per_minute))
         print("---------------------------------------")
     
 
