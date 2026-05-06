@@ -13,8 +13,11 @@ def get_cs_per_min(cs):
         return "Try to last hit well!"
         
 
-# TO DO ADD VISION SCORE TO DO THE INDIVIDUAL SUMMARY
-#def get_vision_score(vision):
+def get_vision_score(vision):
+    if vision >= 25:
+        return "Good vision control this game."
+    else:
+        return "Try to place more wards and improve map vision."
 
 
 def get_result(match):
