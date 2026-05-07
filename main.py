@@ -60,10 +60,12 @@ def print_match_review(matches):
         f"Champion: {matches['champion']}\n"
         f"KDA: {kda}\n"
         f"CS/min: {cs_per_minute}\n"
+        f"Vision score: {matches['vision_score']}\n"
         "Feedback:"
         )
         print(get_kda(kda))
         print(get_cs_per_min(cs_per_minute))
+        print(get_vision_score(matches['vision_score']))
         print("---------------------------------------")
     
 
