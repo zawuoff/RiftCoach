@@ -8,7 +8,7 @@ matches = [
         "cs": 210,
         "game_minutes": 32,
         "vision_score": 18,
-        "win": "True",
+        "win": True,
     },
     {
         "match": 2,
@@ -19,7 +19,7 @@ matches = [
         "cs": 110,
         "game_minutes": 35,
         "vision_score": 18,
-        "win": "False",
+        "win": False,
     },
     {
         "match": 3,
@@ -30,6 +30,6 @@ matches = [
         "cs": 210,
         "game_minutes": 23,
         "vision_score": 20,
-        "win": "True",
+        "win": True,
     },
 ]

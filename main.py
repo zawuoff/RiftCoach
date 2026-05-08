@@ -21,12 +21,15 @@ def get_vision_score(vision):
 
 
 def get_result(match):
-    if match["win"] == "True":
+    if match["win"]:
         return "Victory"
-    else: 
+    else:
         return "Defeat"
 
 def print_overall_summary():
+    if not data.matches:
+        print("No matches to analyze.")
+        return
     print(
         "\n"
         f"RiftCoach Match Review\n"
